@@ -22,7 +22,7 @@ public class TestScript1 {
 
     @BeforeTest
     public void lunchUrl(){
-        driver.get(ua.getData("url1"));
+        driver.get(ua.getData("url"));
         VerifyStep.verifyPageTitle(ua.getData("expTitle"));
     }
     @Test

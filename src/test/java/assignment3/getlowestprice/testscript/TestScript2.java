@@ -31,10 +31,12 @@ public class TestScript2 {
     }
 
     @Test(priority = 0)
-    public void checkAllItem() {
+    public void checkAllItem() throws InterruptedException {
         Utility.enterText(Locator2.searchText(), ul.findProp("expSearch"));
+        Thread.sleep(5000);
 
         Utility.click(Locator2.click());
+        Thread.sleep(5000);
 
         List<WebElement> links = driver.findElements(Locator2.itemList());
         if (Utility.isElementPresent(Locator2.itemList())) {

@@ -27,9 +27,10 @@ public class TestScript1 {
     }
 
     @Test
-    public void checkAllItem(){
+    public void checkAllItem() throws InterruptedException {
 
         Utility.enterText(Locator.searchText(),ul.findProp("expSearch"));
+        Thread.sleep(5000);
 
         Utility.click(Locator.click());
 
